@@ -9,7 +9,7 @@ import { Prompt } from '../../shared/models/prompt.model';
 export class PromptService {
 
   // private apiUrl = 'http://127.0.0.1:8000';
-  private apiUrl = 'http://localhost:8000';
+  private apiUrl = 'https://nexus-backend-zxne.onrender.com';
 
   constructor(private http: HttpClient) {}
 

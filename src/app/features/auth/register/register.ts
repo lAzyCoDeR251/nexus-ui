@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
   onSubmit(): void {
     if (this.registerForm.invalid) return;
 
-    this.http.post('http://localhost:8000/auth/register/', this.registerForm.value)
+    this.http.post('https://nexus-backend-zxne.onrender.com/auth/register/', this.registerForm.value)
       .subscribe({
         next: (res) => {
           console.log('REGISTER SUCCESS:', res);

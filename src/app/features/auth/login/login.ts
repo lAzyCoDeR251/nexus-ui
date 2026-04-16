@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   onSubmit(): void {
     if (this.loginForm.invalid) return;
 
-    this.http.post('http://localhost:8000/auth/login/', this.loginForm.value)
+    this.http.post('https://nexus-backend-zxne.onrender.com/auth/login/', this.loginForm.value)
       .subscribe({
         next: (res: any) => {
           console.log('LOGIN SUCCESS:', res);
